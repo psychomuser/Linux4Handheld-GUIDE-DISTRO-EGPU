@@ -21,7 +21,7 @@ Da terminale Inserire questo comando, e poi riavviare (sudo reboot)
   ```
 
 - **YAY** <br>
-  Repositore pacchetti per linux, è utile averlo per utilizzare dei commandi di installazione yay copiati da guide sul web
+  Repositore pacchetti per linux, è utile averlo per utilizzare dei commandi di installazione yay copiati da guide sul web <br>
   **💿 Installazione:** <br>
    ```
    sudo pacman -S --needed base-devel git
