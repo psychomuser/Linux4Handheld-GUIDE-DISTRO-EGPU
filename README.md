@@ -61,7 +61,7 @@ Ottima Guida di Prob su [YouTube](https://www.youtube.com/watch?v=HUxoKRLJwBI) .
 
 ## Accorgimenti per EGPU NVIDIA
 ### Bazzite
-- Usare la iso per HTPC NVIDIA, c'è comunque handheld daemon per gestire i tasti della handheld e il TDP.
+- Usare la iso per HTPC NVIDIA, c'è comunque handheld daemon per gestire il controller delle handheld e il TDP.
 - Seguire per filo e per segno la guida di Prob per AMD, ma in aggiunta eseguire il comando `rpm-ostree kargs --append=thunderbolt.host_reset=0` da terminale per permettere il funzionamento della EGPU nvidia all'avvio. Attendere la fine dell'operazione, e poi eseguire il comando `systemctl reboot` per riavviare salvando il nuovo parametro del kernel.
 
 
