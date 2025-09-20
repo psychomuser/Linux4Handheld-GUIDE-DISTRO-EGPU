@@ -62,10 +62,14 @@ Ottima Guida di Prob su [YouTube](https://www.youtube.com/watch?v=HUxoKRLJwBI) .
 ## Accorgimenti per EGPU NVIDIA
 ### Bazzite
 - Usare la iso per HTPC NVIDIA, c'è comunque handheld daemon per gestire i tasti della handheld e il TDP.
-- Seguire per filo e per segno la guida poco sopra, ma in aggiunta eseguire il comando `rpm-ostree kargs --append=thunderbolt.host_reset=0` da terminale per permettere l'avvio di egpu nvidia
+- Seguire per filo e per segno la guida di Prob per AMD, ma in aggiunta eseguire il comando `rpm-ostree kargs --append=thunderbolt.host_reset=0` da terminale per permettere il funzionamento della EGPU nvidia all'avvio. Attendere la fine dell'operazione, e poi eseguire il comando `systemctl reboot` per riavviare salvando il nuovo parametro del kernel.
 
 
-
-
-- Su CachyOS usare una normale immagine per handheld. Non installare la versione Nvidia da GRUB, i driver nvidia vanno inseriti in seguito col comando `sudo chwd -a`
+### CachyOS
+- Su CachyOS usare una normale immagine per handheld. Non installare la versione Nvidia da GRUB (non è pensata per handheld).
+- I driver nvidia vanno installati dopo aver collegato la EGPU nvidia, col comando `sudo chwd -a`
+- Seguire per filo e per segno la guida di Prob per AMD, ma in aggiunta è necessario fare alcuni passaggi:
+   - Aprire il file sdboot-manage.conf al percorso `/etc/sdboot-manage.conf`
+   - Cercare la riga `LINUX_OPTIONS=`. e aggiungere la stringa `thunderbolt.host_reset=0` facendo attenzione di scriverlo all'interno delle virgolette presenti, e lasciando semplicemente uno spazio rispetto alle altre stringhe del rigo.
+   - Una volta salvate le modifiche al file .conf, eseguire da terminale il comando `sudo sdboot-manage gen` e poi riavviare.
   
