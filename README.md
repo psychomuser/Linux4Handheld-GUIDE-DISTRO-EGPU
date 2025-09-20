@@ -75,7 +75,7 @@ Ottima Guida di Prob su [YouTube](https://www.youtube.com/watch?v=HUxoKRLJwBI) .
 ### CachyOS
 - Usare una normale immagine per handheld. Non installare la versione Nvidia da GRUB (non è pensata per handheld).
 - I driver nvidia vanno installati dopo aver collegato la EGPU nvidia, col comando `sudo chwd -a`
-- Seguire interamente la guida di Prob per AMD, ma in aggiunta è necessario fare alcuni passaggi:
+- Seguire interamente la guida di Prob per AMD, ma su Nvidia è necessario fare altri passaggi:
    - Aprire il file sdboot-manage.conf al percorso `/etc/sdboot-manage.conf`
    - Cercare la riga `LINUX_OPTIONS=` e aggiungere la stringa `thunderbolt.host_reset=0` facendo attenzione di scriverlo all'interno delle virgolette presenti, e lasciando semplicemente uno spazio rispetto alle altre stringhe del rigo.
    - Una volta salvate le modifiche al file .conf, eseguire da terminale il comando `sudo sdboot-manage gen` e poi riavviare.
