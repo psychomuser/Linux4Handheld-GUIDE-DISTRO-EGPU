@@ -67,7 +67,7 @@ Ottima Guida di Prob su [YouTube](https://www.youtube.com/watch?v=HUxoKRLJwBI) .
 
 
 **NOTE IMPORTANTI:**
--  c'è un bug temporaneo. Avviando la gamescope per la prima volta ci sono vari glitch e flickering da rendere tutto illegibile. Muovendo il mouse scompare, ma aprendo un qualsiasi gioco in gamescope, il problema si risolve per sempre (anche per i successivi avvii).
+- Attualmente (20/09/25) c'è un bug temporaneo. Avviando la gamescope per la prima volta ci sono vari glitch e flickering da rendere tutto illegibile. Muovendo il mouse scompare, ma aprendo un qualsiasi gioco in gamescope, il problema si risolve per sempre (anche per i successivi avvii).
 - Attualmente (20/09/25), per usare la gamescope su nvidia bisogna impostare una risoluzione massima di 2560x1440, ed è necessario disabilitare HDR.
 
 
