@@ -1,17 +1,20 @@
-# Guide e Tips per varie Distro Linux x PC Handheld
+# Linux4Handheld - Raccolta guide x diverse distro
 
 ## Indice
+- [SteamOS](#SteamOS)
 - [Cachyos](#CachyOS)
-- [App e Utility](#app-e-utility-da-installare)
+- [Bazzite](#Bazzite)
+- [EGPU](#EGPU)
+---
+# SteamOS
+Per steamos ho fatto una guida completa apposita a [questo link](https://github.com/psychomuser/Steamos-Utility-x-Ally-e-LegionGO)
+
 ---
 
 # CachyOS
   
 ## Comandi da terminale da conoscere
-**Per aggiornare il database dei pacchetti:**
-  ```
-  sudo pacman -Sy
-  ```
+- **Per aggiornare il database dei pacchetti:** `sudo pacman -Sy`
 
 ## App e Utility da Installare
 
@@ -42,3 +45,27 @@ Tool che permette di installare vari plugin utilissimi, di cui alcuni necessari.
   ```
   wget -O /tmp/bootstrap.sh https://github.com/SavageCore/xone-steam-deck-installer/releases/latest/download/bootstrap.sh && sh /tmp/bootstrap.sh
   ```
+
+  ---
+
+# Bazzite
+  
+## Comandi da terminale da conoscere
+- **Installazione Decky Loader:** `ujust setup-decky`
+- **Disabilitare reset thunderbolt all'avvio (Necessario per uso EGPU NVIDIA):** `rpm-ostree kargs --append=thunderbolt.host_reset=0`
+
+---
+
+# EGPU
+Ottima Guida di Prob su [YouTube](https://www.youtube.com/watch?v=HUxoKRLJwBI) . Il suo PDF a [QUESTO LINK](https://drive.google.com/file/d/1buNI55njLdwwexJO59mwLJBLDETS50T1/view)
+
+## Accorgimenti per EGPU NVIDIA
+### Bazzite
+- Usare la iso per HTPC NVIDIA, c'è comunque handheld daemon per gestire i tasti della handheld e il TDP.
+- Seguire per filo e per segno la guida poco sopra, ma in aggiunta eseguire il comando `rpm-ostree kargs --append=thunderbolt.host_reset=0` da terminale per permettere l'avvio di egpu nvidia
+
+
+
+
+- Su CachyOS usare una normale immagine per handheld. Non installare la versione Nvidia da GRUB, i driver nvidia vanno inseriti in seguito col comando `sudo chwd -a`
+  
