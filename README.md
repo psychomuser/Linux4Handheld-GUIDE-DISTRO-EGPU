@@ -1,10 +1,12 @@
-# CachyOS Handheld - Cosa fare dopo l'installazione
+# Guide e Tips per varie Distro Linux x PC Handheld
 
 ## Indice
-- [Comandi da terminale da conoscere](#comandi-da-terminale-da-conoscere)
+- [Cachyos](#CachyOS)
 - [App e Utility](#app-e-utility-da-installare)
-  
 ---
+
+# CachyOS
+  
 ## Comandi da terminale da conoscere
 **Per aggiornare il database dei pacchetti:**
   ```
