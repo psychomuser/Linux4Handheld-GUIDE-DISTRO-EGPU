@@ -70,7 +70,7 @@ Tool che permette di installare vari plugin utilissimi, di cui alcuni necessari.
   wget -O /tmp/bootstrap.sh https://github.com/SavageCore/xone-steam-deck-installer/releases/latest/download/bootstrap.sh && sh /tmp/bootstrap.sh
   ```
 
-  ## Passaggi Importanti da sapere
+## Passaggi Importanti da sapere
 
   - Quando si passa dalla desktop mode alla gaming mode, decky loader non si avvia. per risolvere seguire i seguenti passaggi:
     - Aprire il file `gamescope-session-plus` al percorso `/usr/bin/gamescope-session-plus `
