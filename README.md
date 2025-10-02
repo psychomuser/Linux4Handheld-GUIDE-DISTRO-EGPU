@@ -79,8 +79,8 @@ Tool che permette di installare vari plugin utilissimi, di cui alcuni necessari.
     - Aprire il file `gamescope-session-plus` al percorso `/usr/bin/gamescope-session-plus `
     - Aggiungere la stringa `sudo systemctl start plugin_loader.service ` sotto la stringa già presente  ` systemctl --user --wait start gamescope-session-plus@${CLIENT}.service & `
     - Aprire il terminale e inserire il comando `sudo nano /etc/sudoers.d/steam_custom` , si aprirà un file di testo da terminale.
-    - Incollare la stringa `deck ALL=NOPASSWD: /bin/systemctl start plugin_loader.service ` per fare in modo che l'apertura del servizio non richieda una password, o in alternativa `deck ALL=NOPASSWD: ALL ` per rimuovere la richiesta di password in tutto il sistema. **IMPORTANTE:** Sostituire `deck` col proprio nome utende di linux.
-    - Una volta incollato, premere `ctrl+x` per chiudere il file, poi `y` e infine `invio` per confermare.
+    - Incollare la stringa `deck ALL=NOPASSWD: /bin/systemctl start plugin_loader.service ` per fare in modo che l'apertura del servizio non richieda una password, o in alternativa `deck ALL=NOPASSWD: ALL ` per rimuovere la richiesta di password in tutto il sistema. **IMPORTANTE:** Sostituire `deck` col proprio nome utente di linux.
+    - Una volta incollato, premere `ctrl+x` per chiudere il file, poi `y`, e infine `invio` per confermare.
     - Adesso decky loader si avvierà correttamente ad ogni avvio della gamescope.
   
 
