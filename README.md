@@ -13,6 +13,7 @@ Per steamos ho fatto una guida completa apposita a [questo link](https://github.
 ---
 
 # CachyOS
+*Aggiornata al 02/10/2025*
   
 ## Comandi da terminale da conoscere
 - **Per aggiornare il database dei pacchetti:** `sudo pacman -Sy`
@@ -50,12 +51,14 @@ Tool che permette di installare vari plugin utilissimi, di cui alcuni necessari.
   ---
 
 # Bazzite
+*Aggiornata al 02/10/2025*
   
 ## Comandi da terminale da conoscere
 - **Installazione Decky Loader:** `ujust setup-decky`
 - **Disabilitare reset thunderbolt all'avvio (Necessario per uso EGPU NVIDIA):** `rpm-ostree kargs --append=thunderbolt.host_reset=0`
 
 # Nobara
+*Aggiornata al 02/10/2025*
   
 ## App e Utility da Installare
 
@@ -86,10 +89,13 @@ Tool che permette di installare vari plugin utilissimi, di cui alcuni necessari.
 ---
 
 # EGPU
+
 Ottima Guida di Prob su [YouTube](https://www.youtube.com/watch?v=HUxoKRLJwBI) . Il suo PDF a [QUESTO LINK](https://drive.google.com/file/d/1buNI55njLdwwexJO59mwLJBLDETS50T1/view)
 
 ## Accorgimenti per EGPU NVIDIA
+
 ### Bazzite
+*Aggiornata al 02/10/2025*
 - Usare la iso per HTPC NVIDIA, c'è comunque handheld daemon per gestire il controller delle handheld e il TDP.
 - Seguire interamente la guida di Prob per AMD, ma in aggiunta eseguire il comando `rpm-ostree kargs --append=thunderbolt.host_reset=0` da terminale per permettere il funzionamento della EGPU nvidia all'avvio.
 - Dopo la fine dell'operazione, eseguire il comando `systemctl reboot` per riavviare salvando il nuovo parametro del kernel.
@@ -102,6 +108,7 @@ Ottima Guida di Prob su [YouTube](https://www.youtube.com/watch?v=HUxoKRLJwBI) .
 
 
 ### CachyOS
+*Aggiornata al 02/10/2025*
 - Usare una normale immagine per handheld. Non installare la versione Nvidia da GRUB (non è pensata per handheld).
 - I driver nvidia vanno installati dopo aver collegato la EGPU nvidia, col comando `sudo chwd -a`
 - Seguire interamente la guida di Prob per AMD, ma su Nvidia è necessario fare altri passaggi:
@@ -118,8 +125,11 @@ Ottima Guida di Prob su [YouTube](https://www.youtube.com/watch?v=HUxoKRLJwBI) .
 - In modalità desktop, inserire la egpu e autorizzare il dispositivo thunderbolt, attualmente questo causa un freeze che costringe a forzare lo spegnimento, ma l'autorizzazione va a buon fine.
 - Una volta spenta la handheld, riaccenderla con egpu collegata e andare in desktop mode.
 - Aprire il gestore driver nvidia e installare i driver open. Attualmente i driver stabili `production` performano un po' meglio ma creano un sacco di glitch nella gamescope, quindi ho dovuto usare i driver open `new feature`, che non hanno nessun glitch ma performano un po' peggio.
-- Seguire interamente la guida di Prob per AMD per configurare AMD.
+- Seguire interamente la guida di Prob per AMD per configurare all-ways-egpu.
 - **NOTA BENE:** Su nobara all-ways-egpu funziona correttamente all'avvio senza creare eccezioni, non serve neanche disattivare il reset della thunderbolt perché funziona bene all'avvio.
+
+**NOTE IMPORTANTI:**
+- Attualmente, per usare la gamescope su nvidia bisogna impostare una risoluzione non più alta di 2560x1440, ed è necessario disabilitare HDR.
 
      
   
