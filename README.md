@@ -75,7 +75,7 @@ Tool che permette di installare vari plugin utilissimi, di cui alcuni necessari.
 
 ## Passaggi Importanti da sapere
 
-  - Quando si passa dalla desktop mode alla gaming mode, decky loader non si avvia. per risolvere seguire i seguenti passaggi:
+  - **Quando si passa dalla desktop mode alla gaming mode, decky loader non si avvia**. per risolvere seguire i seguenti passaggi:
     - Aprire il file `gamescope-session-plus` al percorso `/usr/bin/gamescope-session-plus `
     - Aggiungere la stringa `sudo systemctl start plugin_loader.service ` sotto la stringa già presente  ` systemctl --user --wait start gamescope-session-plus@${CLIENT}.service & `
     - Aprire il terminale e inserire il comando `sudo nano /etc/sudoers.d/steam_custom` , si aprirà un file di testo da terminale.
