@@ -78,6 +78,7 @@ Tool che permette di installare vari plugin utilissimi, di cui alcuni necessari.
     - Aprire il terminale e inserire il comando `sudo nano /etc/sudoers.d/steam_custom` , si aprirà un file di testo da terminale.
     - Incollare la stringa `deck ALL=NOPASSWD: /bin/systemctl start plugin_loader.service ` per fare in modo che l'apertura del servizio non richieda una password, o in alternativa `deck ALL=NOPASSWD: ALL ` per rimuovere la richiesta di password in tutto il sistema. **IMPORTANTE:** Sostituire `deck` col proprio nome utende di linux.
     - Una volta incollato, premere `ctrl+x` per chiudere il file, poi `y` e infine `invio` per confermare.
+    - Adesso decky loader si avvierà correttamente ad ogni avvio della gamescope.
   
 
   
@@ -110,5 +111,16 @@ Ottima Guida di Prob su [YouTube](https://www.youtube.com/watch?v=HUxoKRLJwBI) .
  
 **NOTE IMPORTANTI:**
 - Attualmente (20/09/25), per usare la gamescope su nvidia bisogna impostare una risoluzione non più alta di 2560x1440, ed è necessario disabilitare HDR.
+
+### Nobara
+*Aggiornata al 02/10/2025*
+- Installare la normale immagine per handheld e eseguire tutti gli aggiornamenti
+- In modalità desktop, inserire la egpu e autorizzare il dispositivo thunderbolt, attualmente questo causa un freeze che costringe a forzare lo spegnimento, ma l'autorizzazione va a buon fine.
+- Una volta spenta la handheld, riaccenderla con egpu collegata e andare in desktop mode.
+- Aprire il gestore driver nvidia e installare i driver open. Attualmente i driver stabili `production` performano un po' meglio ma creano un sacco di glitch nella gamescope, quindi ho dovuto usare i driver open `new feature`, che non hanno nessun glitch ma performano un po' peggio.
+- Seguire interamente la guida di Prob per AMD per configurare AMD.
+**NOTA BENE** da notare che su nobara all-ways -egpu funziona correttamente all'avvio senza creare eccezioni, non serve neanche disattivare il reset della thunderbolt perché funziona bene all'avvio.
+
+NOTA: a differenza di
      
   
