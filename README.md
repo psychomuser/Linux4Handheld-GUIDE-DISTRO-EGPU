@@ -119,7 +119,7 @@ Ottima Guida di Prob su [YouTube](https://www.youtube.com/watch?v=HUxoKRLJwBI) .
 - Una volta spenta la handheld, riaccenderla con egpu collegata e andare in desktop mode.
 - Aprire il gestore driver nvidia e installare i driver open. Attualmente i driver stabili `production` performano un po' meglio ma creano un sacco di glitch nella gamescope, quindi ho dovuto usare i driver open `new feature`, che non hanno nessun glitch ma performano un po' peggio.
 - Seguire interamente la guida di Prob per AMD per configurare AMD.
-- **NOTA BENE** da notare che su nobara all-ways -egpu funziona correttamente all'avvio senza creare eccezioni, non serve neanche disattivare il reset della thunderbolt perché funziona bene all'avvio.
+- **NOTA BENE:** Su nobara all-ways-egpu funziona correttamente all'avvio senza creare eccezioni, non serve neanche disattivare il reset della thunderbolt perché funziona bene all'avvio.
 
      
   
